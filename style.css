@@ -1,0 +1,188 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+/* header */
+#header {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 15px 5px;
+  width: 85%;
+  max-width: 720px;
+  min-width: 480px;
+  background-color: #F8F8F8;
+}
+/* header info*/
+#info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: 5px;
+  width: 100%;
+}
+
+#info div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+#info .minesAmount{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#info .minesAmount div{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+/* header settiing bar*/
+#settingBar {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+#settingBar form {
+  padding: 5px 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#settingBar form div {
+  padding: 0px 8px;
+  font-size: 14px;
+  width: 25%;
+}
+
+#settingBar form button {
+  padding: 0px 8px;
+  height: 48px;
+  font-size: 13px;
+  margin: none;
+}
+
+#settingBar .setting {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+}
+
+#settingBar #settingRules {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+#settingBar #settingRules div {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 2px 12px 0px;
+  margin: 0px;
+}
+
+/* table */
+.table {
+  box-sizing: border-box;
+  /* table-layout:fixed; */
+  width: 85%;
+  height: 85%;
+  max-width: 720px;
+  min-width: 480px;
+  max-height: 720px;
+  min-height: 480px;
+}
+
+.table #tbody {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.table #tbody .tr {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.table #tbody .tr .td {
+  border: 4px solid #F0F0F0;
+  border-radius: 10%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  flex-basis: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
+  max-height: 144px;
+}
+
+.table #tbody .tr .td.revealed {
+  border: 4px solid #D0D0D0;
+  border-radius: 0%;
+  background-color: #D8D8D8;
+}
+
+/* table td nearbyMines color */
+.table #tbody .tr .td.revealed.color1 {
+  color: blue;
+}
+
+.table #tbody .tr .td.revealed.color2 {
+  color: green;
+}
+
+.table #tbody .tr .td.revealed.color3 {
+  color: red;
+}
+
+.table #tbody .tr .td.revealed.color4 {
+  color: darkblue;
+}
+
+.table #tbody .tr .td.revealed.color5 {
+  color: purple;
+}
+
+.table #tbody .tr .td.revealed.color6 {
+  color: rgb(14, 214, 204);
+}
+
+.table #tbody .tr .td.revealed.color7 {
+  color: brown;
+}
+
+.table #tbody .tr .td.revealed.color8 {
+  color: black;
+}
+/* table td mine&flag icon */
+img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 85%;
+  max-width: 720px;
+  margin-top: 10px;
+}
